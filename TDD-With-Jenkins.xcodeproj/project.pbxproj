@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		53557E6E149310E0004E1E48 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5397B114149300540056E2B3 /* UIKit.framework */; };
+		53557E6F149310E0004E1E48 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5397B116149300540056E2B3 /* Foundation.framework */; };
+		53557E70149310E0004E1E48 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5397B118149300540056E2B3 /* CoreGraphics.framework */; };
+		53557E76149310E0004E1E48 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 53557E74149310E0004E1E48 /* InfoPlist.strings */; };
+		53557E78149310E0004E1E48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53557E77149310E0004E1E48 /* main.m */; };
+		53557E8C14931173004E1E48 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53557E8B14931173004E1E48 /* GHUnitIOS.framework */; };
+		53557E8F149312A2004E1E48 /* MyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 53557E8E149312A2004E1E48 /* MyTest.m */; };
 		5397B115149300540056E2B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5397B114149300540056E2B3 /* UIKit.framework */; };
 		5397B117149300540056E2B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5397B116149300540056E2B3 /* Foundation.framework */; };
 		5397B119149300540056E2B3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5397B118149300540056E2B3 /* CoreGraphics.framework */; };
@@ -18,6 +25,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53557E6C149310E0004E1E48 /* Tests.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tests.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53557E73149310E0004E1E48 /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
+		53557E75149310E0004E1E48 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		53557E77149310E0004E1E48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53557E79149310E0004E1E48 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		53557E8B14931173004E1E48 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
+		53557E8E149312A2004E1E48 /* MyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTest.m; sourceTree = "<group>"; };
 		5397B110149300540056E2B3 /* TDD-With-Jenkins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TDD-With-Jenkins.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5397B114149300540056E2B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5397B116149300540056E2B3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -34,6 +48,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		53557E69149310E0004E1E48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53557E6E149310E0004E1E48 /* UIKit.framework in Frameworks */,
+				53557E6F149310E0004E1E48 /* Foundation.framework in Frameworks */,
+				53557E70149310E0004E1E48 /* CoreGraphics.framework in Frameworks */,
+				53557E8C14931173004E1E48 /* GHUnitIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5397B10D149300540056E2B3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -47,10 +72,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53557E71149310E0004E1E48 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				53557E72149310E0004E1E48 /* Supporting Files */,
+				53557E8E149312A2004E1E48 /* MyTest.m */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		53557E72149310E0004E1E48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53557E73149310E0004E1E48 /* Tests-Info.plist */,
+				53557E74149310E0004E1E48 /* InfoPlist.strings */,
+				53557E77149310E0004E1E48 /* main.m */,
+				53557E79149310E0004E1E48 /* Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		5397B105149300540056E2B3 = {
 			isa = PBXGroup;
 			children = (
 				5397B11A149300540056E2B3 /* TDD-With-Jenkins */,
+				53557E71149310E0004E1E48 /* Tests */,
 				5397B113149300540056E2B3 /* Frameworks */,
 				5397B111149300540056E2B3 /* Products */,
 			);
@@ -60,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				5397B110149300540056E2B3 /* TDD-With-Jenkins.app */,
+				53557E6C149310E0004E1E48 /* Tests.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +114,7 @@
 		5397B113149300540056E2B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				53557E8B14931173004E1E48 /* GHUnitIOS.framework */,
 				5397B114149300540056E2B3 /* UIKit.framework */,
 				5397B116149300540056E2B3 /* Foundation.framework */,
 				5397B118149300540056E2B3 /* CoreGraphics.framework */,
@@ -101,6 +149,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		53557E6B149310E0004E1E48 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53557E85149310E0004E1E48 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				53557E68149310E0004E1E48 /* Sources */,
+				53557E69149310E0004E1E48 /* Frameworks */,
+				53557E6A149310E0004E1E48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 53557E6C149310E0004E1E48 /* Tests.app */;
+			productType = "com.apple.product-type.application";
+		};
 		5397B10F149300540056E2B3 /* TDD-With-Jenkins */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5397B12E149300540056E2B3 /* Build configuration list for PBXNativeTarget "TDD-With-Jenkins" */;
@@ -140,11 +205,20 @@
 			projectRoot = "";
 			targets = (
 				5397B10F149300540056E2B3 /* TDD-With-Jenkins */,
+				53557E6B149310E0004E1E48 /* Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		53557E6A149310E0004E1E48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53557E76149310E0004E1E48 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5397B10E149300540056E2B3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -157,6 +231,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		53557E68149310E0004E1E48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53557E78149310E0004E1E48 /* main.m in Sources */,
+				53557E8F149312A2004E1E48 /* MyTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5397B10C149300540056E2B3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +253,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		53557E74149310E0004E1E48 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53557E75149310E0004E1E48 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		5397B11D149300540056E2B3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -189,6 +280,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		53557E83149310E0004E1E48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/TDD-With-Jenkins\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		53557E84149310E0004E1E48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_DIR)/TDD-With-Jenkins\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
+				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		5397B12C149300540056E2B3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -257,6 +388,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		53557E85149310E0004E1E48 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53557E83149310E0004E1E48 /* Debug */,
+				53557E84149310E0004E1E48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5397B10A149300540056E2B3 /* Build configuration list for PBXProject "TDD-With-Jenkins" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -273,6 +412,7 @@
 				5397B130149300540056E2B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
